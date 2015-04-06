@@ -1,0 +1,36 @@
+<div class="showcase-overlay">
+    <section class="showcase-popup">
+        <div class="blurb">
+            <h1>{{title}}</h1>
+            <span>
+                {{#each details}}
+                    <i class="fa fa-{{this}}"></i>
+                {{/each}}
+            </span>
+            <div class="key">
+                <ul>
+                    <li><i class="fa fa-paint-brush"></i> Designed</li>
+                    <li><i class="fa fa-html5"></i> Developed (HTML5/SASS)</li>
+                    <li><i class="fa fa-code"></i> Used jQuery</li>
+                    <li><i class="fa fa-gears"></i> Digital Producer</li>
+                    <li><i class="fa fa-search"></i> SEO Optimized</li>
+                    <li><i class="fa fa-envelope"></i> Email Campaign</li>
+                    <li><i class="fa fa-camera"></i> Photography</li>
+                </ul>
+            </div>
+            <a target="_blank" href="{{site}}">View project</a>
+        </div>
+        <div class="images">
+            <a class="previous" href="#"><i class="fa fa-4x fa-angle-left"></i></a>
+            <ul>
+                {{#each gallery}}
+                    <li style="background-image: url({{this.picture.value.main.url}})"></li>
+                {{/each}}
+            </ul>
+            <a class="next" href="#"><i class="fa fa-4x fa-angle-right"></i></a>
+        </div>
+    </section>
+</div>
+<div class="showcase-close">
+    <a href="#/"><i class="fa fa-2x fa-times"></i></a>
+</div>

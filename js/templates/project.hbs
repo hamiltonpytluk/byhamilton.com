@@ -1,0 +1,16 @@
+<article class="{{size}}">
+    <div class="overlay">
+        <a href="#/{{slug}}">
+            <span class="vh"></span>
+            <div class="blurb">
+                <h1>{{title}}</h1>
+                <span>
+                    {{#each details}}
+                        <i class="fa fa-lg fa-{{this}}"></i>
+                    {{/each}}
+                </span>
+            </div>
+        </a>
+    </div>
+    <img src="{{hero}}" />
+</article>
