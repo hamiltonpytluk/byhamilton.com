@@ -75,7 +75,7 @@ $(window).load(function(){
                 });//each
                 $('<div class="buffer" />').appendTo('.projects');
                 if(window.location.hash){
-                    goto(window.location.hash.replace('#/',''));
+                    goto(window.location.hash.replace('#!/',''));
                 }
             });//result
     });//API
@@ -194,7 +194,6 @@ $(window).load(function(){
             goto(url.replace('#!/',''));
         }
     });
-
 
     $('.social a, .ext').attr('target','_blank');
 
